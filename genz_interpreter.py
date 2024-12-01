@@ -1,4 +1,6 @@
 import re
+import argparse
+import os
 
 # Tokenizer
 TOKENS = {
@@ -357,8 +359,23 @@ class Interpreter:
 
 # Main function
 def main():
-    with open(r'C:\Users\User\Desktop\GenZLang\test_program.genz', 'r') as f:
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description="GenZ Language Interpreter")
+    parser.add_argument(
+        "file", type=str, help="The .genz file to execute"
+    )
+    args = parser.parse_args()
+
+    # Verify the file exists and has the correct extension
+    if not os.path.isfile(args.file):
+        raise FileNotFoundError(f"File not found: {args.file}")
+    if not args.file.endswith(".genz"):
+        raise ValueError("Only files with a .genz extension are allowed")
+
+    # Read and process the file
+    with open(args.file, 'r') as f:
         code = f.read()
+
     tokens = tokenize(code)
     parser = Parser(tokens)
     tree = parser.parse()
