@@ -1,0 +1,65 @@
+w_comms mood to 10
+w_comms gyat to 99
+w_comms rizz to 1
+
+yap mood
+yap gyat
+yap rizz
+
+yap "L rizz pranav"
+
+yap mood aura rizz
+yap mood skibidi gyat
+yap gyat sigma rizz
+yap gyat beta mood
+yap gyat fanumTax mood
+lowkey mood vibes 10
+    yap "this 10 bro"
+highkey
+    yap "this aint 10 lil bro"
+yap "hello" , mood
+
+w_comms mood to mood aura 1
+yap mood
+
+yap "mogging could be greater than"
+yap "simp could be less than"
+
+yap "for is runItBack"
+yap "while is anothaOne"
+
+w_comms start to 1
+w_comms end to 2
+
+loop i runItBack start to end
+    yap "Iteration:", i
+yap "Loop complete!"
+
+w_comms count1 to 1
+w_comms count2 to 1
+w_comms count3 to 10
+w_comms count4 to 10
+
+while count1 ratio 5
+    yap "Count is:", count1
+    w_comms count1 to count1 aura 1
+
+yap "ratio loop finished!"
+
+while count2 kindaRatio 5
+    yap "Count is:", count2
+    w_comms count2 to count2 aura 1
+
+yap "kindaRatio loop finished!"
+
+while count3 based 5
+    yap "Count is:", count3
+    w_comms count3 to count3 skibidi 1
+
+yap "based loop finished!"
+
+while count4 kindaBased 5
+    yap "Count is:", count4
+    w_comms count4 to count4 skibidi 1
+
+yap "kindaBased loop finished!"
